@@ -1,6 +1,6 @@
-﻿namespace COMP123_Final_Lesson_A.Views
+﻿namespace COMP123_Final_Lesson_A_Part2
 {
-    partial class MasterForm
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // MasterForm
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 553);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "MasterForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Master Form";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
         }
 
         #endregion

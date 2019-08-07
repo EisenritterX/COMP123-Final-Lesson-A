@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6CB5F8EC-9F50-4B86-9125-FF4B1EF5D275}</ProjectGuid>
+    <ProjectGuid>{AC495215-692A-489E-AE45-75482BE0B02B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>COMP123_Final_Lesson_A</RootNamespace>
-    <AssemblyName>COMP123-Final-Lesson-A</AssemblyName>
+    <RootNamespace>COMP_123_Final_Lesson_A_Part3</RootNamespace>
+    <AssemblyName>COMP-123-Final-Lesson-A-Part3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,23 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Views\StartForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\StartForm.Designer.cs">
-      <DependentUpon>StartForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Views\MasterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\MasterForm.Designer.cs">
-      <DependentUpon>MasterForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Views\MasterForm.resx">
-      <DependentUpon>MasterForm.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,8 +63,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\StartForm.resx">
-      <DependentUpon>StartForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

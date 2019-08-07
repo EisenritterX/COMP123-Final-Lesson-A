@@ -1,6 +1,6 @@
-﻿namespace COMP123_Final_Lesson_A.Views
+﻿namespace COMP123_Final_Lesson_A_Part2.Views
 {
-    partial class MasterForm
+    partial class ChildForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,18 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // MasterForm
+            // ChildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(622, 433);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "MasterForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Master Form";
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Name = "ChildForm";
+            this.Text = "ChildForm";
             this.ResumeLayout(false);
 
         }
@@ -49,4 +46,3 @@
         #endregion
     }
 }
-
