@@ -16,5 +16,37 @@ namespace COMP_123_Final_Lesson_A_Part3.Views
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            if (MainTabControl.SelectedIndex != 0)
+            {
+                MainTabControl.SelectedIndex--;
+            }
+        }
+
+        private void NextButton_Click(object sender, EventArgs e)
+        {
+            if (MainTabControl.SelectedIndex < MainTabControl.TabPages.Count-1)
+            {
+                MainTabControl.SelectedIndex++;
+            }
+        }
+
+        private void SourceTextBox_MouseDown(object sender, MouseEventArgs e)
+        {
+            SourceTextBox.DoDragDrop(SourceTextBox.Text, DragDropEffects.Move);
+            SourceTextBox.Clear();
+        }
+
+        private void TargetTextBox_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Move;
+        }
+
+        private void TargetTextBox_DragDrop(object sender, DragEventArgs e)
+        {
+            TargetTextBox.Text = e.Data.GetData(DataFormats.Text).ToString();
+        }
     }
 }
